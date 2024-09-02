@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "React Chrome Extension",
+  "description": "This is a Chrome extension built with React and TypeScript",
+  "action": {
+    "default_popup": "js/index.html",
+    "default_title": "Briefly"
+  },
+  "background": {
+    "service-worker": "service-worker.js",
+    "type": "module"
+  },
+  "permissions": ["scripting", "storage"],
+  "host_permissions": ["http://*/*", "https://*/*", "https://*.example.com/"],
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png"
+  }
+}
